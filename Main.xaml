@@ -1,0 +1,90 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,461.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="455.2,396.8" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: VTU4U - VTU Results | Class Rank | Previous SEM Results" sap:VirtualizedContainerService.HintSize="412,305.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d2eb6666-f362-4c3d-9872-dfd85ea9b220" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,84" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="60a978e1e0b60189a4a61d016684b23d.png" Selector="&lt;html app='chrome.exe' title='VTU4U - VTU Results | Class Rank | Previous SEM Results'/&gt;" Url="https://www.vtu4u.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
